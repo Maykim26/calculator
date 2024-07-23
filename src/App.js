@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import Calculator from "./Calculator"; // Calculator.js 파일이 src 폴더에 있어야 합니다.
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div className="App">
+            <h3>공학 계산기</h3>
+            <Calculator />
+        </div>
+    );
+};
 
 export default App;

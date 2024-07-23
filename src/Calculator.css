@@ -1,0 +1,86 @@
+/* src/Calculator.css */
+.calculator {
+    width: 100%;
+    max-width: 400px; /* 모바일에 맞춰 최대 너비 설정 */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.display {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px; /* 모바일 화면에 맞춰 폰트 크기 조정 */
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.button-grid button {
+    padding: 10px;
+    font-size: 14px; /* 모바일 화면에 맞춰 폰트 크기 조정 */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.button-grid button:hover {
+    background-color: #e1e1e1;
+}
+
+.fraction-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.fraction-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.fraction-box input {
+    width: 50px; /* 모바일 화면에 맞춰 너비 조정 */
+    padding: 8px;
+    font-size: 14px; /* 모바일 화면에 맞춰 폰트 크기 조정 */
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.fraction-box span {
+    font-size: 14px; /* 모바일 화면에 맞춰 폰트 크기 조정 */
+    margin: 0 5px;
+}
+
+.fraction-input button {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 14px; /* 모바일 화면에 맞춰 폰트 크기 조정 */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #e1e1e1;
+    cursor: pointer;
+    box-sizing: border-box;
+}
