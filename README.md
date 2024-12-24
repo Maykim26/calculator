@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# 계산기 프로젝트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 프로젝트 소개
 
-## Available Scripts
+이 프로젝트는 기본적인 사칙연산 및 제곱, 제곱근 계산을 지원하는 계산기 애플리케이션입니다. 사용자 인터페이스는 간단하고 직관적이며, 모바일 화면에 최적화되어 있습니다. 기본적인 수학 연산을 쉽게 수행할 수 있는 기능을 제공합니다.
 
-In the project directory, you can run:
+## 🛠️ 주요 기능
 
-### `npm start`
+- **사칙연산**: 덧셈, 뺄셈, 곱셈, 나눗셈.
+- **제곱 계산**: 숫자의 제곱을 계산합니다.
+- **제곱근 계산**: 숫자의 제곱근을 계산합니다.
+- **입력 및 결과**: 숫자 입력 후 계산 결과를 실시간으로 확인할 수 있습니다.
+- **오류 처리**: 잘못된 입력에 대한 오류 처리 (예: 0으로 나누기).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📐 기술 스택
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: UI 구성에 사용.
+- **JavaScript**: 계산 로직 구현.
+- **Math.js**: 수학적 연산을 위한 라이브러리.
+- **CSS**: 스타일링 및 UI 구성.
 
-### `npm test`
+## 💬 흐름
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **사용자 입력**: 계산기 버튼을 클릭하여 숫자와 연산자를 입력합니다.
+2. **연산 수행**: 사용자가 "=" 버튼을 클릭하면 입력된 수식이 평가됩니다.
+3. **결과 출력**: 계산 결과가 화면에 표시됩니다.
+4. **오류 처리**: 잘못된 입력이 들어오면 "Error" 메시지가 표시됩니다.
 
-### `npm run build`
+## 🎨 UI/UX 디자인
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **간결한 디자인**: 버튼과 입력란이 직관적으로 배치되어 있어 사용자가 쉽게 이해하고 사용할 수 있습니다.
+- **모바일 최적화**: 화면 크기에 맞춰 계산기의 크기가 자동으로 조정됩니다.
+- **오류 메시지**: 계산 중 오류가 발생하면 사용자에게 오류 메시지를 명확하게 표시하여, 문제를 빠르게 인식할 수 있도록 합니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔍 추가 구현 고려 사항
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **기능 확장**: 고급 수학 기능(로그, 삼각 함수 등)을 추가하여 기능을 확장할 수 있습니다.
+- **테스트**: Jest와 같은 테스트 라이브러리를 사용하여 유닛 테스트 및 통합 테스트를 구현할 수 있습니다.
+- **다크 모드**: 사용자에게 다크 모드 옵션을 제공하여 UI 디자인을 더욱 유연하게 할 수 있습니다.
+- **브라우저 호환성**: 다양한 브라우저에서의 호환성을 테스트하고, 문제가 발생하면 수정해야 합니다.

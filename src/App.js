@@ -4,12 +4,11 @@ import Calculator from "./Calculator"; // Calculator.js 파일이 src 폴더에 
 import "./App.css";
 
 const App = () => {
-    return (
-        <div className="App">
-            <h3>공학 계산기</h3>
-            <Calculator />
-        </div>
-    );
+	return (
+		<div className="App">
+			<Calculator />
+		</div>
+	);
 };
 
 export default App;
